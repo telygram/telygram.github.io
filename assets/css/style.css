@@ -4022,8 +4022,7 @@ a.tgme_head_dl_button:active,
 }
 
 .tgme_body_wrap {
-  padding: 70px 16px;
-  background: url('../img/background.jpg') repeat center center fixed
+  padding: 70px 16px 40px;
 }
 
 .tgme_page {
