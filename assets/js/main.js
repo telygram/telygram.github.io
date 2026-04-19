@@ -1,75 +1,77 @@
-let posts = [];
-let perPage = 6;
-let current = 1;
+let posts=[];
 
 fetch('data/posts.json')
 .then(r=>r.json())
 .then(d=>{
-  posts = d;
-  render();
-  sidebar();
+  posts=d;
+  home();
 });
 
-function render(){
-  let start = (current-1)*perPage;
-  let data = posts.slice(start, start+perPage);
+/* HOME */
+function home(){
+  let featured = posts[0];
 
-  let el = document.getElementById('post-list');
-  el.innerHTML = "";
+  document.getElementById("featured").innerHTML=`
+  <div class="card featured mb-4">
+    <img src="${featured.image}">
+    <div class="p-3">
+      <h3>${featured.title}</h3>
+      <a href="post.html?id=${featured.id}">Read More</a>
+    </div>
+  </div>`;
 
-  data.forEach(p=>{
-    el.innerHTML += `
+  let grid="";
+  posts.slice(1).forEach((p,i)=>{
+    grid+=`
     <div class="col-md-6 mb-4">
       <div class="card">
         <img loading="lazy" src="${p.image}">
-        <div class="card-body">
-          <h5>${p.title}</h5>
-          <a href="post.html?id=${p.id}" class="btn btn-dark">Read</a>
+        <div class="p-2">
+          <h6>${p.title}</h6>
+          <a href="post.html?id=${p.id}">Read</a>
+        </div>
+      </div>
+    </div>`;
+
+    /* INSERT ADS EVERY 4 POSTS */
+    if((i+1)%4==0){
+      grid+=`<div class="col-12"><div class="ads text-center">ADS SLOT</div></div>`;
+    }
+  });
+
+  document.getElementById("posts").innerHTML=grid;
+}
+
+/* POST PAGE */
+const url = new URLSearchParams(window.location.search);
+const id = url.get("id");
+
+if(id){
+fetch('data/posts.json')
+.then(r=>r.json())
+.then(data=>{
+  let post = data.find(p=>p.id==id);
+
+  document.getElementById("title").innerText=post.title;
+  document.getElementById("img").src=post.image;
+  document.getElementById("content").innerHTML=post.content;
+
+  /* RELATED */
+  let rel = data.filter(p=>p.category==post.category && p.id!=post.id).slice(0,4);
+
+  let html="";
+  rel.forEach(r=>{
+    html+=`
+    <div class="col-md-3">
+      <div class="card">
+        <img src="${r.image}">
+        <div class="p-2">
+          <small>${r.title}</small>
         </div>
       </div>
     </div>`;
   });
 
-  pagination();
-}
-
-function pagination(){
-  let total = Math.ceil(posts.length/perPage);
-  let el = document.getElementById('pagination');
-  el.innerHTML = "";
-
-  for(let i=1;i<=total;i++){
-    el.innerHTML += `<li class="page-item">
-    <a class="page-link" onclick="go(${i})">${i}</a></li>`;
-  }
-}
-
-function go(i){
-  current=i;
-  render();
-}
-
-/* SIDEBAR */
-function sidebar(){
-  let recent = document.getElementById('recent');
-  posts.slice(0,5).forEach(p=>{
-    recent.innerHTML += `<li><a href="post.html?id=${p.id}">${p.title}</a></li>`;
-  });
-}
-
-/* DARK MODE */
-document.getElementById("darkToggle")?.addEventListener("click",()=>{
-  document.body.classList.toggle("dark");
-  localStorage.setItem("dark",document.body.classList.contains("dark"));
+  document.getElementById("related").innerHTML=html;
 });
-
-if(localStorage.getItem("dark")=="true"){
-  document.body.classList.add("dark");
 }
-
-/* SCROLL TOP */
-let btn = document.getElementById("topBtn");
-window.onscroll=()=>{
-  btn.style.display = window.scrollY>300 ? "block":"none";
-}
-btn.onclick=()=>window.scrollTo({top:0,behavior:'smooth'});

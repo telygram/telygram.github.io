@@ -1,78 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>My Premium Blog</title>
-  <meta name="description" content="Premium blog template GitHub Pages SEO">
+<title>Premium Magazine Blog</title>
+<meta name="description" content="SEO Blog Premium">
 
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/css/style.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="assets/css/style.css" rel="stylesheet">
 </head>
 
 <body>
 
-  <!-- NAVBAR -->
-  <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
-    <div class="container">
-      <a class="navbar-brand fw-bold" href="#">MyBlog</a>
+<!-- HEADER -->
+<header class="border-bottom bg-white sticky-top">
+<div class="container d-flex justify-content-between py-3">
+<h4 class="fw-bold">MyBlog</h4>
+<nav>
+<a href="#">Home</a>
+<a href="#">About</a>
+</nav>
+</div>
+</header>
 
-      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">☰</button>
+<!-- TOP ADS -->
+<div class="container my-3">
+<div class="ads text-center">ADS HEADER</div>
+</div>
 
-      <div class="collapse navbar-collapse" id="nav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="/page.html">About</a></li>
-        </ul>
+<div class="container">
+<div class="row">
 
-        <button id="darkToggle" class="btn btn-sm btn-dark ms-3">🌙</button>
-      </div>
-    </div>
-  </nav>
+<!-- MAIN -->
+<div class="col-lg-8">
 
-  <!-- HERO -->
-  <section class="hero text-center">
-    <div class="container">
-      <h1 class="fw-bold">Premium Blog Template</h1>
-      <p>Fast, SEO, GitHub Pages Ready</p>
-    </div>
-  </section>
+<!-- FEATURED -->
+<div id="featured"></div>
 
-  <div class="container mt-4">
-    <div class="row">
+<!-- IN FEED ADS -->
+<div class="ads my-3 text-center">ADS IN-FEED</div>
 
-      <!-- POSTS -->
-      <div class="col-lg-8">
-        <div id="post-list" class="row"></div>
+<!-- POST GRID -->
+<div id="posts" class="row"></div>
 
-        <nav>
-          <ul class="pagination" id="pagination"></ul>
-        </nav>
-      </div>
+</div>
 
-      <!-- SIDEBAR -->
-      <div class="col-lg-4">
-        <div class="sidebar">
+<!-- SIDEBAR -->
+<div class="col-lg-4">
+<div class="sidebar">
 
-          <input type="text" id="search" placeholder="Search..." class="form-control mb-3">
+<div class="ads mb-3 text-center">ADS SIDEBAR</div>
 
-          <h5>Recent</h5>
-          <ul id="recent"></ul>
+<h5>Popular</h5>
+<ul id="popular"></ul>
 
-          <h5>Categories</h5>
-          <ul id="cats"></ul>
+</div>
+</div>
 
-        </div>
-      </div>
+</div>
+</div>
 
-    </div>
-  </div>
-
-  <button id="topBtn">↑</button>
-
-  <script src="assets/js/main.js"></script>
+<script src="assets/js/main.js"></script>
 </body>
-
 </html>
