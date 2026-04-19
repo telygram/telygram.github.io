@@ -3828,7 +3828,7 @@ video.smartphone_video_player {
   height: 100%;
   pointer-events: none;
   z-index: -1;
-  background: url('../img/background.jpg') no-repeat center center fixed;
+  background: url('../img/background.jpg') repeat center center fixed;
   background-size: cover;
 }
 
@@ -3839,8 +3839,6 @@ video.smartphone_video_player {
   width: 100%;
   height: 100%;
 }
-
-.tgme_background.default {}
 
 .tgme_background.motion {
   left: -10px;
