@@ -1,16 +1,44 @@
 [
   {
-    "title": "Kpop Wallpaper HD 2026",
+    "id": 1,
+    "title": "Blackpink HD Wallpaper",
     "image": "assets/img/post1.jpg",
-    "date": "2026-04-19",
     "category": "kpop",
-    "link": "posts/post-1.html"
+    "content": "Full content here..."
   },
   {
-    "title": "Best Anime Wallpaper",
+    "id": 2,
+    "title": "Anime Aesthetic Wallpaper",
     "image": "assets/img/post2.jpg",
-    "date": "2026-04-18",
     "category": "anime",
-    "link": "posts/post-2.html"
+    "content": "Full content here..."
+  }
+    {
+    "id": 3,
+    "title": "Blackpink HD Wallpaper",
+    "image": "assets/img/post1.jpg",
+    "category": "kpop",
+    "content": "Full content here..."
+  },
+  {
+    "id": 4,
+    "title": "Anime Aesthetic Wallpaper",
+    "image": "assets/img/post2.jpg",
+    "category": "anime",
+    "content": "Full content here..."
+  }
+    {
+    "id": 5,
+    "title": "Blackpink HD Wallpaper",
+    "image": "assets/img/post1.jpg",
+    "category": "kpop",
+    "content": "Full content here..."
+  },
+  {
+    "id": 6,
+    "title": "Anime Aesthetic Wallpaper",
+    "image": "assets/img/post2.jpg",
+    "category": "anime",
+    "content": "Full content here..."
   }
 ]
