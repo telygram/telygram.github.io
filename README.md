@@ -5,3 +5,6 @@
 ### https://t.aridjaya.com/contact/lunakayla
 ## https://t.aridjaya.com/group
 ### https://t.aridjaya.com/group/girlsdaily
+### https://t.aridjaya.com/atom.xml
+### https://t.aridjaya.com/rss.xml
+### https://t.aridjaya.com/sitemap.xml
