@@ -1,4 +1,4 @@
-# https://telygram.github.io
-# https://telygram.github.io/channel
-# https://telygram.github.io/contact
-# https://telygram.github.io/group
+# https://t.aridjaya.com
+# https://t.aridjaya.com/channel
+# https://t.aridjaya.com/contact
+# https://t.aridjaya.com/group
