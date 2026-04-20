@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title>Aridjaya Telegram Directory</title>
+  <link href="https://t.aridjaya.com/"/>
+  <updated>2026-04-20T00:00:00Z</updated>
+  <author>
+    <name>Aridjaya</name>
+  </author>
+  <id>https://t.aridjaya.com/</id>
+
+  <entry>
+    <title>Home</title>
+    <link href="https://t.aridjaya.com/"/>
+    <id>https://t.aridjaya.com/</id>
+    <updated>2026-04-20T00:00:00Z</updated>
+    <summary>Main landing page</summary>
+  </entry>
+
+  <entry>
+    <title>Channel Directory</title>
+    <link href="https://t.aridjaya.com/channel"/>
+    <id>https://t.aridjaya.com/channel</id>
+    <updated>2026-04-20T00:00:00Z</updated>
+    <summary>Browse available channels</summary>
+  </entry>
+
+  <entry>
+    <title>HD Full Time Channel</title>
+    <link href="https://t.aridjaya.com/channel/hdfulltime"/>
+    <id>https://t.aridjaya.com/channel/hdfulltime</id>
+    <updated>2026-04-20T00:00:00Z</updated>
+    <summary>Premium HD content updates</summary>
+  </entry>
+
+  <entry>
+    <title>Contact Page</title>
+    <link href="https://t.aridjaya.com/contact"/>
+    <id>https://t.aridjaya.com/contact</id>
+    <updated>2026-04-20T00:00:00Z</updated>
+    <summary>Contact and support information</summary>
+  </entry>
+
+  <entry>
+    <title>Luna Kayla Contact</title>
+    <link href="https://t.aridjaya.com/contact/lunakayla"/>
+    <id>https://t.aridjaya.com/contact/lunakayla</id>
+    <updated>2026-04-20T00:00:00Z</updated>
+    <summary>Direct contact profile</summary>
+  </entry>
+
+  <entry>
+    <title>Group Directory</title>
+    <link href="https://t.aridjaya.com/group"/>
+    <id>https://t.aridjaya.com/group</id>
+    <updated>2026-04-20T00:00:00Z</updated>
+    <summary>Explore Telegram groups</summary>
+  </entry>
+
+  <entry>
+    <title>Girls Daily Group</title>
+    <link href="https://t.aridjaya.com/group/girlsdaily"/>
+    <id>https://t.aridjaya.com/group/girlsdaily</id>
+    <updated>2026-04-20T00:00:00Z</updated>
+    <summary>Daily group content updates</summary>
+  </entry>
+
+</feed>
