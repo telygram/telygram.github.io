@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+<channel>
+
+  <title>Aridjaya Telegram Directory</title>
+  <link>https://t.aridjaya.com/</link>
+  <description>Latest updates from channels, groups, and contacts.</description>
+  <language>en-us</language>
+  <lastBuildDate>Mon, 20 Apr 2026 00:00:00 +0000</lastBuildDate>
+
+  <item>
+    <title>Home</title>
+    <link>https://t.aridjaya.com/</link>
+    <description>Main landing page</description>
+    <pubDate>Mon, 20 Apr 2026 00:00:00 +0000</pubDate>
+    <guid>https://t.aridjaya.com/</guid>
+  </item>
+
+  <item>
+    <title>Channel Directory</title>
+    <link>https://t.aridjaya.com/channel</link>
+    <description>Browse available channels</description>
+    <pubDate>Mon, 20 Apr 2026 00:00:00 +0000</pubDate>
+    <guid>https://t.aridjaya.com/channel</guid>
+  </item>
+
+  <item>
+    <title>HD Full Time Channel</title>
+    <link>https://t.aridjaya.com/channel/hdfulltime</link>
+    <description>Premium HD content updates</description>
+    <pubDate>Mon, 20 Apr 2026 00:00:00 +0000</pubDate>
+    <guid>https://t.aridjaya.com/channel/hdfulltime</guid>
+  </item>
+
+  <item>
+    <title>Contact Page</title>
+    <link>https://t.aridjaya.com/contact</link>
+    <description>Contact and support information</description>
+    <pubDate>Mon, 20 Apr 2026 00:00:00 +0000</pubDate>
+    <guid>https://t.aridjaya.com/contact</guid>
+  </item>
+
+  <item>
+    <title>Luna Kayla Contact</title>
+    <link>https://t.aridjaya.com/contact/lunakayla</link>
+    <description>Direct contact profile</description>
+    <pubDate>Mon, 20 Apr 2026 00:00:00 +0000</pubDate>
+    <guid>https://t.aridjaya.com/contact/lunakayla</guid>
+  </item>
+
+  <item>
+    <title>Group Directory</title>
+    <link>https://t.aridjaya.com/group</link>
+    <description>Explore Telegram groups</description>
+    <pubDate>Mon, 20 Apr 2026 00:00:00 +0000</pubDate>
+    <guid>https://t.aridjaya.com/group</guid>
+  </item>
+
+  <item>
+    <title>Girls Daily Group</title>
+    <link>https://t.aridjaya.com/group/girlsdaily</link>
+    <description>Daily group content updates</description>
+    <pubDate>Mon, 20 Apr 2026 00:00:00 +0000</pubDate>
+    <guid>https://t.aridjaya.com/group/girlsdaily</guid>
+  </item>
+
+</channel>
+</rss>
